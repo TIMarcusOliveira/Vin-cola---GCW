@@ -1,0 +1,10 @@
+<h1>Editar Contato</h1>
+<form method="POST" action="/admin/contato">
+  {{#each conteudo}}
+    <div>
+      <label>Texto (ID {{this.id}})</label><br>
+      <textarea name="{{this.id}}">{{this.texto}}</textarea>
+    </div>
+  {{/each}}
+  <button type="submit">Salvar</button>
+</form>

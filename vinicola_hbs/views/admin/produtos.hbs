@@ -1,0 +1,13 @@
+<h1>Editar Produtos</h1>
+<form method="POST" action="/admin/produtos">
+  {{#each conteudo}}
+    <fieldset>
+      <legend>Produto ID {{this.id}}</legend>
+      <label>Título</label><br>
+      <input type="text" name="{{this.id}}[titulo]" value="{{this.titulo}}"><br>
+      <label>Preço</label><br>
+      <input type="text" name="{{this.id}}[preco]" value="{{this.preco}}"><br>
+    </fieldset>
+  {{/each}}
+  <button type="submit">Salvar</button>
+</form>
