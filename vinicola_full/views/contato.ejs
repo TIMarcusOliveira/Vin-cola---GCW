@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header><h2>Lágrimas de Baco</h2></header>
+  <main>
+    <% conteudo.forEach(c => { %>
+      <p><%= c.texto %></p>
+      <img src="<%= c.foto %>" alt="">
+      <iframe src="<%= c.mapa %>" width="400" height="300"></iframe>
+    <% }) %>
+  </main>
+  <footer><p>© 2025 Lágrimas de Baco</p></footer>
+</body>
+</html>
