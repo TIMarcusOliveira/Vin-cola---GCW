@@ -65,13 +65,9 @@ nav a {
   transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #d8a47f;
-}
-
+nav a:hover,
 nav a.active {
-  color: #d8a47f; /* mesma cor do hover */
-  border-bottom: 2px solid #d8a47f; /* opcional para destaque */
+  color: #d8a47f;
 }
 
 main {
