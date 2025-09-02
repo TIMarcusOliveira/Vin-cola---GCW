@@ -1,7 +1,13 @@
-{{#each conteudo}}
-  <div>
-    <img src="{{this.imagem}}" alt="">
-    <h3>{{this.titulo}}</h3>
-    <p>{{this.preco}}</p>
-  </div>
-{{/each}}
+<h2>Nossos Produtos</h2>
+
+<div class="produtos-container">
+  {{#each conteudo}}
+    <div class="produto-card">
+      <div class="produto-imagem">
+        <img src="/imgs/{{this.imagem}}" alt="{{this.titulo}}" />
+      </div>
+      <h3>{{this.titulo}}</h3>
+      <p>{{this.descricao}}</p>
+    </div>
+  {{/each}}
+</div>
