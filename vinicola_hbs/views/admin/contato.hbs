@@ -3,7 +3,11 @@
   {{#each conteudo}}
     <div>
       <label>Texto (ID {{this.id}})</label><br>
-      <textarea name="{{this.id}}">{{this.texto}}</textarea>
+      <textarea name="{{this.id}}[texto]">{{this.texto}}</textarea>
+    </div>
+    <div>
+      <label>Imagem (ID {{this.id}})</label><br>
+      <textarea name="{{this.id}}[foto]">{{this.foto}}</textarea>
     </div>
   {{/each}}
   <button type="submit">Salvar</button>

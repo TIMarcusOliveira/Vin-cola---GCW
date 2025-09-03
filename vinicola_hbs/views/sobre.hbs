@@ -1,6 +1,15 @@
-{{#each conteudo}}
-  <section>
-    <img src="{{this.imagem}}" alt="">
-    <p>{{this.texto}}</p>
-  </section>
-{{/each}}
+<h2>Sobre Nós</h2>
+
+<section class="sobre-container" >
+  <div class="sobre-item" >
+    <div class="sobre-imagem">
+      <img src="{{conteudo.imagem1}}" alt="Imagem sobre nós" >
+    </div>
+    <div class="sobre-texto" >
+      <p>{{conteudo.texto}}</p>
+    </div>
+    <div class="sobre-imagem">
+      <img src="{{conteudo.imagem2}}" alt="Imagem sobre nós">
+    </div>
+  </div>
+</section>

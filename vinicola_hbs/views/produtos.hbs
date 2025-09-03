@@ -4,9 +4,10 @@
   {{#each conteudo}}
     <div class="produto-card">
       <div class="produto-imagem">
-        <img src="/imgs/{{this.imagem}}" alt="{{this.titulo}}" />
+        <img src="{{this.imagem}}" alt="{{this.titulo}}" />
       </div>
       <h3>{{this.titulo}}</h3>
+      <h4>{{this.preco}}</h4>
       <p>{{this.descricao}}</p>
     </div>
   {{/each}}

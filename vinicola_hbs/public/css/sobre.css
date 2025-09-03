@@ -1,0 +1,36 @@
+.sobre-item{
+  display: flex; 
+  align-items: center;
+}
+
+.sobre-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.sobre-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sobre-imagem img {
+  width: 600px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #a4153e;
+  padding: 20px;
+}
+
+.sobre-texto {
+  width: 650px;
+  margin: 0.5em;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #f5e6e8;
+}

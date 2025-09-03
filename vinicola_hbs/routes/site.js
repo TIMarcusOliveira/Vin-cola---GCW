@@ -8,14 +8,16 @@ const Contato = require("../models/Contato");
 
 router.get("/", async (req, res) => {
   const conteudo = await Inicio.findOne();
-  res.render("inicio", { conteudo: conteudo?.dataValues, isHome: true });
+  res.render("inicio", { 
+    conteudo: conteudo?.dataValues, 
+    isHome: true });
 });
 
-router.get("/sobre", async (req, res) => {
-  const conteudo = await Sobre.findAll();
-  res.render("sobre", {
-    conteudo: conteudo.map((c) => c.dataValues),
-    isSobre: true,
+router.get('/sobre', async (req, res) => {
+  const conteudo = await Sobre.findOne();
+  res.render('sobre', { 
+    conteudo: conteudo?.dataValues, 
+    isSobre:true 
   });
 });
 

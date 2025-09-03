@@ -54,9 +54,11 @@ router.get('/contato', async (req, res) => {
 
 router.post('/contato', async (req, res) => {
   for (const id in req.body) {
-    await Contato.update({ texto: req.body[id] }, { where: { id } });
+    const { texto, foto } = req.body[id]; // pega cada campo
+    await Contato.update({ texto, foto }, { where: { id } });
   }
   res.redirect('/admin/contato');
 });
+
 
 module.exports = router;
