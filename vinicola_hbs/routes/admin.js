@@ -1,10 +1,22 @@
 const express = require('express');
+const session = require('express-session')
 const router = express.Router();
 
 const Inicio = require('../models/Inicio');
 const Sobre = require('../models/Sobre');
 const Produto = require('../models/Produto');
 const Contato = require('../models/Contato');
+
+function authMiddleware(req, res, next) {
+  if (req.session && req.session.user) {
+    next();
+  } else {
+    res.redirect('/login');
+  }
+}
+
+// Todas as rotas admin agora exigem login
+router.use(authMiddleware);
 
 router.get('/', (req, res) => res.render('admin/index'));
 
@@ -17,7 +29,7 @@ router.get('/inicio', async (req, res) => {
 router.post('/inicio', async (req, res) => {
   const { id, titulo, texto, botao } = req.body;
   await Inicio.update({ titulo, texto, botao }, { where: { id } });
-  res.redirect('/admin/inicio');
+  res.redirect('/admin/index');
 });
 
 // Sobre
@@ -30,7 +42,7 @@ router.post('/sobre', async (req, res) => {
   for (const id in req.body) {
     await Sobre.update({ texto: req.body[id] }, { where: { id } });
   }
-  res.redirect('/admin/sobre');
+  res.redirect('/admin/index');
 });
 
 // Produtos
@@ -43,7 +55,7 @@ router.post('/produtos', async (req, res) => {
   for (const id in req.body) {
     await Produto.update(req.body[id], { where: { id } });
   }
-  res.redirect('/admin/produtos');
+  res.redirect('/admin/index');
 });
 
 // Contato
@@ -57,7 +69,7 @@ router.post('/contato', async (req, res) => {
     const { texto, foto } = req.body[id]; // pega cada campo
     await Contato.update({ texto, foto }, { where: { id } });
   }
-  res.redirect('/admin/contato');
+  res.redirect('/admin/index');
 });
 
 
