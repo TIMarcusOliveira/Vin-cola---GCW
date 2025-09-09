@@ -1,5 +1,5 @@
-.sobre-item{
-  display: flex; 
+.sobre-item {
+  display: flex;
   align-items: center;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .sobre-imagem img {
-  width: 600px;
+  width: 300px;
   height: auto;
   border-radius: 12px;
   background-color: #a4153e;

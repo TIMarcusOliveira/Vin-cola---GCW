@@ -103,11 +103,11 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `imagem`, `titulo`, `preco`, `descricao`) VALUES
-(5, '/img/v1.png', 'Vinho Tinto Seco', 'R$120', 'Rico em sabor, ideal para carnes vermelhas.'),
-(6, '/img/v2.png', 'Vinho Branco Suave', 'R$70', 'Leve e refrescante, perfeito para dias ensolarados.'),
-(7, '/img/v3.png', 'Espumante Rosé', 'R$150', 'Elegante e equilibrado, ótimo para celebrações.'),
-(8, '/img/v4.png', 'Suco de Uva Integral', 'R$50', '100% natural, sem adição de açúcar.'),
-(9, '/img/v5.png', 'Kit Degustação', 'R$120', 'Seleção especial de rótulos para experimentar.');
+(1, '/img/v1.png', 'Vinho Tinto Seco', 'R$120', 'Rico em sabor, ideal para carnes vermelhas.'),
+(2, '/img/v2.png', 'Vinho Branco Suave', 'R$70', 'Leve e refrescante, perfeito para dias ensolarados.'),
+(3, '/img/v3.png', 'Espumante Rosé', 'R$150', 'Elegante e equilibrado, ótimo para celebrações.'),
+(4, '/img/v4.png', 'Suco de Uva Integral', 'R$50', '100% natural, sem adição de açúcar.'),
+(5, '/img/v5.png', 'Kit Degustação', 'R$120', 'Seleção especial de rótulos para experimentar.');
 
 -- --------------------------------------------------------
 
@@ -127,7 +127,7 @@ CREATE TABLE `sobre` (
 --
 
 INSERT INTO `sobre` (`id`, `texto`, `imagem1`, `imagem2`) VALUES
-(3, 'Na Lágrimas de Baco, a paixão pelo vinho é cultivada em cada parreira e em cada garrafa. Fundada com o compromisso de unir tradição e inovação, nossa vinícola dedica-se a produzir vinhos que refletem a riqueza do terroir e a personalidade de cada safra.\r\n\r\nAcreditamos que o vinho é mais do que uma bebida: é uma experiência, uma celebração de momentos e histórias compartilhadas. Desde o cuidado com a seleção das uvas até a maturação e o engarrafamento, cada etapa do nosso processo é guiada pelo respeito à natureza e pela busca incessante pela excelência.\r\n\r\nConvidamos você a conhecer nossos vinhos, explorar nossos vinhedos e brindar conosco à arte de transformar uvas em emoções engarrafadas. Na Lágrimas de Baco, cada gole conta uma história.', '/img/vinicola1.jpg', '/img/vinicola2.jpg');
+(1, 'Na Lágrimas de Baco, a paixão pelo vinho é cultivada em cada parreira e em cada garrafa. Fundada com o compromisso de unir tradição e inovação, nossa vinícola dedica-se a produzir vinhos que refletem a riqueza do terroir e a personalidade de cada safra.\r\n\r\nAcreditamos que o vinho é mais do que uma bebida: é uma experiência, uma celebração de momentos e histórias compartilhadas. Desde o cuidado com a seleção das uvas até a maturação e o engarrafamento, cada etapa do nosso processo é guiada pelo respeito à natureza e pela busca incessante pela excelência.\r\n\r\nConvidamos você a conhecer nossos vinhos, explorar nossos vinhedos e brindar conosco à arte de transformar uvas em emoções engarrafadas. Na Lágrimas de Baco, cada gole conta uma história.', '/img/vinicola1.jpg', '/img/vinicola2.jpg');
 
 --
 -- Índices para tabelas despejadas
