@@ -89,6 +89,52 @@ main p {
   color: #f5e6e8;
 }
 
+.forms{
+  position: relative;
+  margin: 30px 0;
+}
+
+.forms label{
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  color: rgb(0, 0, 0);
+  cursor: text;
+  transition: 0.5s ease-in-out;
+  padding-left: 6px;
+}
+
+.input{
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid rgb(200,200,200);
+    outline: 0;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.input:focus ~ label,
+.input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+ #entrar{
+  padding: 13px 30px;
+  font-size: 15px;
+  background-color:rgb(143, 10, 76);
+  border: 1px solid rgb(95, 3, 64);
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+  outline: 0;
+}
+
 .btn {
   background-color: #a4153e;
   color: white;
