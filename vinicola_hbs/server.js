@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 //segurança sessao
 app.use(
   session({
-    secret: "process.env.SESSION_SECRET", // tipo uma criptografia do cookie p nn falsificarem
+    secret: "chave_super_secreta", // tipo uma criptografia do cookie p nn falsificarem
     resave: false,
     saveUninitialized: false,
   })
