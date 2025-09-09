@@ -1,0 +1,64 @@
+.contato-admin-container {
+  font-family: Arial, sans-serif;
+  padding: 40px 0;
+}
+
+.contato-admin-container h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contato-admin-container form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.contato-admin-container .contato-fieldset {
+  border: 1px solid #d1bfa7;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px 100px;
+  background: #f5eee6;
+}
+
+.contato-admin-container label {
+  color: #333;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.contato-admin-container textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #d1bfa7;
+  border-radius: 15px;
+  background: #fff;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 120px;
+  margin-bottom: 12px;
+}
+
+.contato-admin-container button[type="submit"] {
+  background: #7c2c2c;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: block;
+  margin: 0 auto;
+}
+
+.contato-admin-container button[type="submit"]:hover {
+  background: #a94442;
+}

@@ -1,14 +1,15 @@
-<h1>Editar Contato</h1>
-<form method="POST" action="/admin/contato">
-  {{#each conteudo}}
-    <div>
-      <label>Texto (ID {{this.id}})</label><br>
-      <textarea name="{{this.id}}[texto]">{{this.texto}}</textarea>
-    </div>
-    <div>
-      <label>Imagem (ID {{this.id}})</label><br>
-      <textarea name="{{this.id}}[foto]">{{this.foto}}</textarea>
-    </div>
-  {{/each}}
-  <button type="submit">Salvar</button>
-</form>
+
+<div class="contato-admin-container">
+  <h1>Editar Contato</h1>
+  <form method="POST" action="/admin/contato">
+    {{#each conteudo}}
+      <div class="contato-fieldset">
+        <label>Texto (ID {{this.id}})</label>
+        <textarea name="{{this.id}}[texto]">{{this.texto}}</textarea>
+        <label>Imagem (ID {{this.id}})</label>
+        <textarea name="{{this.id}}[foto]">{{this.foto}}</textarea>
+      </div>
+    {{/each}}
+    <button type="submit">Salvar</button>
+  </form>
+</div>
