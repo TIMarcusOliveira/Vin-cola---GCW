@@ -1,13 +1,21 @@
-<link rel="stylesheet" href="/css/contato-adm.css" />
+<link rel="stylesheet" href="/css/adm_contato.css" />
 <div class="contato-admin-container">
   <h1>Editar Contato</h1>
-  <form method="POST" action="/admin/contato">
+  <form method="POST" action="/admin/contato" enctype="multipart/form-data">
     {{#each conteudo}}
       <div class="contato-fieldset">
         <label>Texto (ID {{this.id}})</label>
         <textarea name="{{this.id}}[texto]">{{this.texto}}</textarea>
+
         <label>Imagem (ID {{this.id}})</label>
-        <textarea name="{{this.id}}[foto]">{{this.foto}}</textarea>
+        <input type="file" name="foto_{{this.id}}" />
+
+        {{! Mostra imagem atual como preview }}
+        {{#if this.foto}}
+          <div class="preview">
+            <img src="{{this.foto}}" alt="Imagem atual do contato" />
+          </div>
+        {{/if}}
       </div>
     {{/each}}
     <button type="submit">Salvar</button>

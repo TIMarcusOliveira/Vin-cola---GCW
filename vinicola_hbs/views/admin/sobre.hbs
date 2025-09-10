@@ -1,12 +1,28 @@
-<link rel="stylesheet" href="/css/sobre_adm.css">
-<section id="sobre-adm">
+<link rel="stylesheet" href="/css/adm_sobre.css" />
+<section id="sobre-admin-container">
   <h1>Editar Página Sobre</h1>
   <form method="POST" action="/admin/sobre">
     {{#each conteudo}}
       <fieldset>
         <div>
-          <label>Texto (ID {{this.id}})</label><br>
+          <label>Texto (ID {{this.id}})</label><br />
           <textarea name="{{this.id}}">{{this.texto}}</textarea>
+
+          <label>Imagem 1:</label>
+          <input type="file" name="imagem1" />
+
+          {{#if this.imagem1}}
+            <div class="preview">
+              <img src="{{this.imagem1}}" alt="Imagem atual 1" />
+            </div>
+          {{/if}}
+          <label>Imagem 2:</label>
+          <input type="file" name="imagem2" />
+          {{#if this.imagem2}}
+            <div class="preview">
+              <img src="{{this.imagem2}}" alt="Imagem atual 2" />
+            </div>
+          {{/if}}
         </div>
       </fieldset>
     {{/each}}

@@ -1,15 +1,36 @@
+<link rel="stylesheet" href="/css/adm_produto.css" />
 <div class="produtos-admin-container">
   <h1>Editar Produtos</h1>
-  <form method="POST" action="/admin/produtos">
+  <form method="POST" action="/admin/produtos" enctype="multipart/form-data">
     {{#each conteudo}}
       <fieldset>
         <legend>Produto ID {{this.id}}</legend>
-        <label>Título</label><br>
-        <input type="text" name="{{this.id}}[titulo]" value="{{this.titulo}}"><br>
-        <label>Descrição</label><br>
-        <textarea name="{{this.id}}[descricao]" class="descricao">{{this.descricao}}</textarea><br>
-        <label>Preço</label><br>
-        <input type="text" name="{{this.id}}[preco]" value="{{this.preco}}"><br>
+        <label>Título</label><br />
+        <input
+          type="text"
+          name="{{this.id}}[titulo]"
+          value="{{this.titulo}}"
+        /><br />
+
+        <label>Imagem:</label>
+        <input type="file" name="imagem_{{this.id}}" />
+        {{#if this.imagem}}
+          <div class="preview">
+            <img src="{{this.imagem}}" alt="Imagem atual do produto" />
+          </div>
+        {{/if}}
+
+        <label>Descrição</label><br />
+        <textarea
+          name="{{this.id}}[descricao]"
+          class="descricao"
+        >{{this.descricao}}</textarea><br />
+        <label>Preço</label><br />
+        <input
+          type="text"
+          name="{{this.id}}[preco]"
+          value="{{this.preco}}"
+        /><br />
       </fieldset>
     {{/each}}
     <button type="submit">Salvar</button>

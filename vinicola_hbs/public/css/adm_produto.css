@@ -15,7 +15,7 @@
   background: #fff;
   padding: 30px 40px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .produtos-admin-container fieldset {
@@ -35,7 +35,7 @@
   color: #333;
   font-size: 1rem;
 }
-.descricao{
+.descricao {
   width: 100%;
   padding: 10px 15px;
   border: 1px solid #d1bfa7;
@@ -68,7 +68,11 @@
   margin: 0 auto;
 }
 
-
 .produtos-admin-container button[type="submit"]:hover {
   background: #a94442;
+}
+
+.produtos-admin-container img {
+  max-width: 200px;
+  height: auto;
 }

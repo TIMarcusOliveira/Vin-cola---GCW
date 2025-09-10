@@ -1,12 +1,12 @@
-<link rel="stylesheet" href="/css/sobre_adm.css">
+<link rel="stylesheet" href="/css/adm_sobre.css" />
 <h1>Editar Página Início</h1>
 <form method="POST" action="/admin/inicio">
-  <input type="hidden" name="id" value="{{conteudo.id}}">
-  <label>Título</label><br>
-  <input type="text" name="titulo" value="{{conteudo.titulo}}"><br>
-  <label>Texto</label><br>
-  <textarea name="texto">{{conteudo.texto}}</textarea><br>
-  <label>Botão</label><br>
-  <input type="text" name="botao" value="{{conteudo.botao}}"><br>
+  <input type="hidden" name="id" value="{{conteudo.id}}" />
+  <label>Título</label><br />
+  <input type="text" name="titulo" value="{{conteudo.titulo}}" /><br />
+  <label>Texto</label><br />
+  <textarea name="texto">{{conteudo.texto}}</textarea><br />
+  <label>Botão</label><br />
+  <input type="text" name="botao" value="{{conteudo.botao}}" /><br />
   <button type="submit">Salvar</button>
 </form>

@@ -15,7 +15,7 @@
   background: #fff;
   padding: 30px 40px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .contato-admin-container .contato-fieldset {
@@ -61,4 +61,9 @@
 
 .contato-admin-container button[type="submit"]:hover {
   background: #a94442;
+}
+
+.contato-admin-container img {
+  max-width: 200px;
+  height: auto;
 }

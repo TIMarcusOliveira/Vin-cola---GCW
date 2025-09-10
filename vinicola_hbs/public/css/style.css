@@ -89,12 +89,12 @@ main p {
   color: #f5e6e8;
 }
 
-.forms{
+.forms {
   position: relative;
   margin: 30px 0;
 }
 
-.forms label{
+.forms label {
   position: absolute;
   bottom: 5px;
   left: 0;
@@ -104,29 +104,29 @@ main p {
   padding-left: 6px;
 }
 
-.input{
-    width: 100%;
-    padding: 5px;
-    border: 0;
-    border-bottom: 2px solid rgb(200,200,200);
-    outline: 0;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    transition: 0.5s ease-in-out;
-    border-radius: 10px;
+.input {
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  border-bottom: 2px solid rgb(200, 200, 200);
+  outline: 0;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
 }
 
 .input:focus ~ label,
-.input:valid ~ label{
-    transform: translateY(-24px);
-    font-size: 12px;
-    color: rgb(255, 255, 255);
+.input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 12px;
+  color: rgb(255, 255, 255);
 }
 
- #entrar{
+#entrar {
   padding: 13px 30px;
   font-size: 15px;
-  background-color:rgb(143, 10, 76);
+  background-color: rgb(143, 10, 76);
   border: 1px solid rgb(95, 3, 64);
   border-radius: 50px;
   cursor: pointer;
@@ -158,4 +158,34 @@ footer {
   margin-top: 60px;
   font-size: 0.9em;
   color: #ccc;
+}
+
+/* estiliza o botão do input file */
+input[type="file"] {
+  font-family: inherit;
+  font-size: 1em;
+  color: #fff;
+  background-color: #520b26;
+  border: 1px solid #a4153e;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+/* botão “Selecionar arquivo” */
+input[type="file"]::file-selector-button {
+  background-color: #a4153e;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 12px; /* separa o botão do texto */
+  transition: background-color 0.3s ease;
+}
+
+/* hover no botão */
+input[type="file"]::file-selector-button:hover {
+  background-color: #8d1235;
 }
