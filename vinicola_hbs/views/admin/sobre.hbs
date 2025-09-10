@@ -1,10 +1,15 @@
-<h1>Editar Página Sobre</h1>
-<form method="POST" action="/admin/sobre">
-  {{#each conteudo}}
-    <div>
-      <label>Texto (ID {{this.id}})</label><br>
-      <textarea name="{{this.id}}">{{this.texto}}</textarea>
-    </div>
-  {{/each}}
-  <button type="submit">Salvar</button>
-</form>
+<link rel="stylesheet" href="/css/sobre_adm.css">
+<section id="sobre-adm">
+  <h1>Editar Página Sobre</h1>
+  <form method="POST" action="/admin/sobre">
+    {{#each conteudo}}
+      <fieldset>
+        <div>
+          <label>Texto (ID {{this.id}})</label><br>
+          <textarea name="{{this.id}}">{{this.texto}}</textarea>
+        </div>
+      </fieldset>
+    {{/each}}
+    <button type="submit">Salvar</button>
+  </form>
+</section>
